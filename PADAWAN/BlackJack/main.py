@@ -35,7 +35,7 @@ while score < 22:
             score += value_card
 
         if score == 21:
-            print(f'*** CONGRATULATIONS {player}, YOU WIN THE GAME ***')
+            print(f'*** CONGRATULATIONS {player.upper()}, YOU WIN THE GAME ***')
             print('=== GAME DATA ===')
             print(f'Suit: {suit_card}')
             print(f'Value: {value_card}')
@@ -43,7 +43,7 @@ while score < 22:
             break
 
         if score > 21:
-            print(f'*** OH NO {player}, YOU LOSE ***')
+            print(f'*** OH NO {player.upper()}, YOU LOSE ***')
             print('=== GAME DATA ===')
             print(f'Suit: {suit_card}')
             print(f'Value: {value_card}')
@@ -51,9 +51,7 @@ while score < 22:
             break
 
     if answer.upper() == 'E':
-        print('=== GAME DATA ===')
-        print(f'Suit: {suit_card}')
-        print(f'Value: {value_card}')
+        print('=== TOTAL SCORE ===')
         print(f'Score: {score}')
         break
 
